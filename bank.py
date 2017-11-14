@@ -10,6 +10,19 @@ class Person():
         print("Age", ":", self.age)
 
 
+class Education():
+
+    def __init__(self, degree, university, year):
+        self.degree = degree
+        self.university = university
+        self.year = year
+
+    def show(self):
+        print("\nEducation qualifications are..... \n")
+        print("Qualification:", self.degree, "\nUniversity:", self.university,
+              "\nYear:", self.year)
+
+
 class Account():
 
     def __init__(self):
@@ -21,15 +34,15 @@ class Account():
     def check_balance(self):
         print('£' + str(self.balance))
 
-
-
-
 person = Person('Dan Blake', 45)
 
 person.show()
 
-account = Account();
+account = Account()
 
 account.credit_account(10000)
 
 account.check_balance()
+
+education = Education('MBA', "London Business School", "2019")
+education.show()
