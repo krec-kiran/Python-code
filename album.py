@@ -18,3 +18,30 @@ with open("music.txt") as f:
 
 print("Music Dictionary....", music)
 print(music['Pixies'])
+
+# music = MusicFile('/Users/ynonperek/music.txt')
+
+# print(music.artist('Joy Division').songs)
+
+
+class MusicFile():
+    songs = dict()
+
+    def __init__(self, filename):
+        self.filename = filename
+
+    def artist(self, name):
+        self.artistName = name
+
+
+class Artist(MusicFile):
+    songs = dict()
+
+    def __init__(self, artistName):
+        self.artistName = artistName
+
+
+test = MusicFile("test.txt")
+
+
+print(test.artist("demo"))
