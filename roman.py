@@ -9,6 +9,10 @@ number = int(input("Enter the number "))
 
 roman = value = ''
 
+if number <= 10:
+  print(numerals[number])
+  exit()
+
 if number > 500:
     counter.insert(0, int(number / 500))
     number = number % 500
@@ -41,5 +45,19 @@ for i in range(len(counter)):
     if counter[i] and i == 3:
         value = value + ''.join(counter[3] * ['X']) + roman
 
-
 print("ROMAN NUMBER IS", value)
+
+
+# def f(x):
+#   for i in range(len(counter)):
+#     if counter[i]:
+#       return {
+#           0: value = value + ''.join(counter[0] * ['D']),
+#           1: value + ''.join(counter[1] * ['C']),
+#           2: value = value + ''.join(counter[2] * ['L']),
+#           3: value = value + ''.join(counter[3] * ['X']) + roman
+#       }.get(x)
+
+
+
+

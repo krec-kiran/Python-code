@@ -23,3 +23,18 @@ print(lst1)
 lst = ['C']*3
 
 print(''.join(lst))
+
+
+def f(x):
+    return {
+        'a': 1,
+        'b': 2
+    }.get(x, 9)
+
+value = f('a')
+
+print(value)
+
+
+
+
