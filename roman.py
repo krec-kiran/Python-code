@@ -1,7 +1,7 @@
 numerals = {1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V', 6: 'VI', 7: 'VII', 8: 'VIII', 9: 'IX', 10: 'X',
             50: 'L', 100: 'C', 500: 'D'}
 
-counter = [0] * 5
+counter = [0] * 4
 
 number = int(input("Enter the number "))
 
@@ -32,9 +32,8 @@ if number >= 10 and number < 50:
 number = number % 10
 if number != 0:
     roman = numerals[number]
-    print(roman)
 
-print("Roman Weightage Counte", counter)
+# print("Roman Weightage Counter", counter)
 
 for i in range(len(counter)):
     if counter[i] and i == 0:
@@ -48,7 +47,7 @@ for i in range(len(counter)):
     if counter[i] and i == 4:
         value = value + ''.join(counter[4] * ['X'])
 
-print("ROMAN NUMBER IS", value+roman)
+print("Roman number is:",value+roman)
 
 
 # def f(x):

@@ -1,4 +1,6 @@
 from copy import deepcopy
+from collections import Counter
+
 
 lst1 = ['a','b',['ab','ba']]
 
@@ -35,6 +37,16 @@ value = f('a')
 
 print(value)
 
+print(Counter(['apple','red','apple','red','red','pear']))
 
 
+mydict = {'carl':40,
+          'alan':2,
+          'bob':1,
+          'danny':43}
 
+items = [(v, k) for k, v in mydict.items()]
+items.sort()
+items.reverse()
+items = [(k, v) for v, k in items]
+print(items)
