@@ -1,5 +1,6 @@
 #  memoize discussion
 
+
 def memoize(f):
     memo = {}
 
@@ -8,6 +9,7 @@ def memoize(f):
             memo[x] = f(x)
         return memo[x]
     return helper
+
 
 def fib(n):
     if n == 0:
@@ -21,3 +23,20 @@ fib = memoize(fib)
 
 print(fib(10))
 
+x = set(["Perl", "Python", "Java"])
+print(x.pop())
+print(x)
+
+queue = ['a', 'b', 'c']
+
+queue.append('d')
+
+print(queue)
+
+print(queue.pop(0))
+
+x = [45, 17, 21, -2]
+
+x.sort()
+
+print(x)
