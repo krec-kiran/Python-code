@@ -36,7 +36,9 @@ for k,v in music.items():
 alb = [item for sublist in alb for item in sublist]
 alb = [item for sublist in alb for item in sublist]
 
+
 alb = dict(Counter(alb))
+
 
 items = [(v, k) for k, v in alb.items()]
 items.sort()
@@ -47,7 +49,6 @@ items = [(k, v) for v, k in items]
 
 items = [item for sublist in items for item in sublist]
 
-print(items)
 
 
 print("\nThe top three popular albums are:\n")
