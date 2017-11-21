@@ -20,7 +20,7 @@ with open("music-albums.txt") as f:
             music[line[0]] = line[1]
         i = i + 1
 
-# print("Music Dictionary....", music)
+print("Music Dictionary....", music)
 
 # 1. Create a list from music dictionray
 # 2. Loop through it, as it is dictionary containing lists within list and create a flat list of lists
