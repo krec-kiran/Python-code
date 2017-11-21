@@ -7,10 +7,12 @@ with open("music-albums.txt") as f:
     music = dict()
     albums = dict()
     line = []
+    fans = []
 
     while i < len(content):
         line = content[i].split(':', 1)
         line[0] = line[0].strip()
+        fans.append(line[0])
         line[1] = (line[1].strip()).split(',', 10)
         music.setdefault(line[0], [])
         if line[0] in music:
@@ -21,6 +23,10 @@ with open("music-albums.txt") as f:
 
 mydict = dict()
 
+sorted_items = dict()
+
+# print(fans)
+
 alb = []
 for k, v in music.items():
     alb.append(v)
@@ -28,7 +34,7 @@ for k, v in music.items():
 alb = [item for sublist in alb for item in sublist]
 alb = [item for sublist in alb for item in sublist]
 
-print("\nThe album list is\n", list(set(alb)))
+# print("\nThe album list is\n", list(set(alb)))
 
 mylist = list(set(alb))
 
@@ -41,8 +47,17 @@ for value in mylist:
                     mydict[value].append(k)
 
 
-# print("\nAlbum followers are:\n", mydict)
+sorted_items = sorted(mydict.items(), key = lambda item : len(item[1]))
+sorted_items.reverse()
+print("\nSorted Items\n",sorted_items)
 
-# sorted_items = sorted(mydict.items(), key = lambda item : len(item[1]))
-# sorted_items.reverse()
-# print("\nSorted Items\n",sorted_items)
+ans=[]
+update=[]
+
+for k,v in sorted_items:
+    if not set(v).issubset(update):
+            ans.append(k)
+    update = update + v
+    fans=list(set(fans) - set(v))
+
+print("\nHappy employees bands\n",ans)

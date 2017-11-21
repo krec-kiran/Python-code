@@ -1,6 +1,6 @@
-Anne:  U2,Metallica,The_Doors,Black_Sabbath
-John:  U2,The_Beatles,The_Doors,Metallica,Pink_Floyd
+Anne:   Metallica,The_Doors,Black_Sabbath
+John:   The_Beatles,The_Doors,Metallica,Pink_Floyd
 Kathy:  U2,Led_Zeppelin
-Jamie:  U2,Radiohead
+Jamie:  Radiohead
 Ashok:  Guns_n_Roses,U2,The_Doors
-Sara:  U2,Blink_182,Iron_Maiden,The_Doors
+Sara:   Blink_182,Iron_Maiden,The_Doors

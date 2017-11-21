@@ -45,10 +45,10 @@ items.sort()
 items.reverse()
 items = [(k, v) for v, k in items]
 
-# print(items)
 
 items = [item for sublist in items for item in sublist]
 
+print(items)
 
 
 print("\nThe top three popular albums are:\n")
