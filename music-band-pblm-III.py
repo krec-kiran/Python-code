@@ -1,5 +1,3 @@
-from collections import Counter
-
 with open("music-albums.txt") as f:
     content = f.readlines()
     content = [x.strip() for x in content]

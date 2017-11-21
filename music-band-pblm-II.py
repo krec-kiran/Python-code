@@ -1,5 +1,3 @@
-from collections import Counter
-
 with open("music-albums.txt") as f:
     content = f.readlines()
     content = [x.strip() for x in content]
@@ -39,10 +37,3 @@ for value in mylist:
                 mydict.setdefault(x, [])
                 if value == x:
                     mydict[value].append(k)
-
-
-# print("\nAlbum followers are:\n", mydict)
-
-# sorted_items = sorted(mydict.items(), key = lambda item : len(item[1]))
-# sorted_items.reverse()
-# print("\nSorted Items\n",sorted_items)

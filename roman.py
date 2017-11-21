@@ -9,6 +9,10 @@ number = int(input("Enter the number "))
 
 roman = value = ''
 
+if number==0:
+  print("No roman equivalent for zero!")
+  exit()
+
 if number >= 1000:
     counter.insert(0, int(number / 1000))
     number = number % 1000
