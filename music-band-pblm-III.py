@@ -44,9 +44,9 @@ for value in mylist:
                 if value == x:
                     mydict[value].append(k)
 
-
-sorted_items = sorted(mydict.items(), key = lambda item : len(item[1]))
-sorted_items.reverse()
+# print("MYDICT",mydict)
+sorted_items = sorted(mydict.items(), key = lambda item : len(item[1]),reverse=True)
+# sorted_items.reverse()
 print("\nSorted Items\n",sorted_items)
 
 ans=[]
