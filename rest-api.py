@@ -5,6 +5,9 @@ from pygal.style import LightColorizedStyle as LCS, LightenStyle as LS
 url = 'https://api.github.com/search/repositories?q=language:python&sort=stars'
 r = requests.get(url)
 print("Status Code:", r.status_code)
+
+print("r looks like",r.text[:100])
+
 response_dict = r.json()
 
 # print(response_dict.keys())
