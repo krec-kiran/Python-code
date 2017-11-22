@@ -1,0 +1,6 @@
+dictionary:
+setdefault will set a key value to a given value as defualt if key is not found, else that value is returned
+get will return the value of the key else a default value is returned - but the value is not set
+defaultdict - sets up a dictionary with default value kind of initializer while setdefault sets up the value of key, while accessing the key or after it.
+
+__name__ is to find the local scope of the main function and executes as stand alone but importing that does not run that codebase outside of the module - script based at command line.
