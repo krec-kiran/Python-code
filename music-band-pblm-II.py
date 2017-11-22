@@ -26,7 +26,7 @@ for k, v in music.items():
 alb = [item for sublist in alb for item in sublist]
 alb = [item for sublist in alb for item in sublist]
 
-print("\nThe album list is\n", list(set(alb)))
+# print("\nThe album list is\n", list(set(alb)))
 
 mylist = list(set(alb))
 
@@ -37,3 +37,7 @@ for value in mylist:
                 mydict.setdefault(x, [])
                 if value == x:
                     mydict[value].append(k)
+
+sorted_items = sorted(mydict.items(), key = lambda item : len(item[1]))
+sorted_items.reverse()
+print("\nBand followers\n",sorted_items)
