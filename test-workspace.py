@@ -34,18 +34,19 @@
 # of second element as the following
 
 # take second element for sort
-# def takeSecond(elem):
-#     return elem[1]
+def takeSecond(elem):
+    print(elem)
+    return elem[1]
 
-# # random list
-# random = [(2, 2), (3, 4), (4, 1), (1, 3)]
+# random list
+random = [(2, 2), (3, 4), (4, 1), (1, 3)]
 
 # print(takeSecond((3, 4)))
 
-# # sort list with key
-# sortedList = sorted(random, key=takeSecond)
+# sort list with key
+sortedList = sorted(random, key=takeSecond)
 
-# testlist = sorted(random)
+testlist = sorted(random)
 
 # print(testlist)
 # # print list
@@ -66,18 +67,18 @@
 
 # Merging two sorted lists
 
-a=[1,3,5,7]
-b=[2,4,6,8]
-c=[]
+# a=[1,3,5,7]
+# b=[2,4,6,8]
+# c=[]
 
-# a.extend(b)
-# c=sorted(a)
-# print(c)
+# # a.extend(b)
+# # c=sorted(a)
+# # print(c)
 
-# difference between append and extend - append adds in a list while extends adds in all elements into the source list
+# # difference between append and extend - append adds in a list while extends adds in all elements into the source list
 
-a.append(b)
-print(a)
+# a.append(b)
+# print(a)
 
 
 # while a and b:
