@@ -4,3 +4,6 @@ get will return the value of the key else a default value is returned - but the 
 defaultdict - sets up a dictionary with default value kind of initializer while setdefault sets up the value of key, while accessing the key or after it.
 
 __name__ is to find the local scope of the main function and executes as stand alone but importing that does not run that codebase outside of the module - script based at command line.
+
+__init__.py is an empty py file in a each of directories under dir1/dir2/mod so that
+mod could be imported in a file as import dir1.dir2.mod

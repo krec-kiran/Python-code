@@ -88,3 +88,7 @@ testlist = sorted(random)
 #     c.append(b.pop(0))
 
 # print(c)
+
+# use str() to convert digits to string format before using join or other functions
+
+print(''.join(str(x) for x in range(10)))
