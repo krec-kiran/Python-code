@@ -121,7 +121,7 @@ testlist = sorted(random)
 # print(test.__doc__)
 
 # keyword arguments - name=value kwargs
-# **args - arbitrary number of arguments of any length
+# *args - arbitrary number of arguments of any length
 
 def kwargs(**kwargs):
   for k,v in kwargs.items():
