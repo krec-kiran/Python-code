@@ -7,3 +7,12 @@ __name__ is to find the local scope of the main function and executes as stand a
 
 __init__.py is an empty py file in a each of directories under dir1/dir2/mod so that
 mod could be imported in a file as import dir1.dir2.mod
+
+generators are of two types - function type gens using yeild & expression type gen - list comprehension
+
+any collection having _next_ is iterator and having _next_ is iterable
+
+
+remove(el) - removes the first matching element - el and used when element to be removed's index is not known
+
+del / pop - used when index is know and both work on indexes

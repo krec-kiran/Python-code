@@ -91,4 +91,49 @@ testlist = sorted(random)
 
 # use str() to convert digits to string format before using join or other functions
 
-print(''.join(str(x) for x in range(10)))
+# print(''.join(str(x) for x in range(10)))
+
+# import os
+
+# print(os.path.expanduser('~'))
+
+# print(os.getcwd())
+
+# import itertools
+
+# print([x for x in itertools.combinations('125',2)])
+
+# print((x ** 3 for x in range(5)))
+
+# expression type generator - list comprehension
+# gen = (x ** 3 for x in range(5))
+
+# print(next(gen))
+# print(next(gen))
+# print(next(gen))
+# print(next(gen))
+
+# def test(arg):
+#   """test function returns an argument"""
+#   return arg
+
+# print(test(10))
+# print(test.__doc__)
+
+# keyword arguments - name=value kwargs
+# **args - arbitrary number of arguments of any length
+
+def kwargs(**kwargs):
+  for k,v in kwargs.items():
+    print(k,v)
+
+kwargs(**{'uno':'one','dos':'two','tres':'three'})
+
+kwargs(dos='two', tres='three', uno='one')
+
+L = [1,5,6,6,8,6,9]
+
+L.remove(6)
+
+print(L)
+
