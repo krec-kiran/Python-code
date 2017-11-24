@@ -47,3 +47,7 @@ hastables are implemented through dictionaries
 keys=['a','b','c'] values = [1,2,3]
 d4 = {k:v for k,v in zip(keys,values)} or easier as dict(zip(keys,values))
 print(d4)
+
+closures are function objects which retains the values even past execution of function calls or outside of memory.
+It is used for data hiding when there are few methods and widely in decorators to create wrapper functions.
+
