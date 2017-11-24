@@ -34,19 +34,19 @@
 # of second element as the following
 
 # take second element for sort
-def takeSecond(elem):
-    print(elem)
-    return elem[1]
+# def takeSecond(elem):
+#     print(elem)
+#     return elem[1]
 
-# random list
-random = [(2, 2), (3, 4), (4, 1), (1, 3)]
+# # random list
+# random = [(2, 2), (3, 4), (4, 1), (1, 3)]
 
-# print(takeSecond((3, 4)))
+# # print(takeSecond((3, 4)))
 
-# sort list with key
-sortedList = sorted(random, key=takeSecond)
+# # sort list with key
+# sortedList = sorted(random, key=takeSecond)
 
-testlist = sorted(random)
+# testlist = sorted(random)
 
 # print(testlist)
 # # print list
@@ -123,17 +123,69 @@ testlist = sorted(random)
 # keyword arguments - name=value kwargs
 # *args - arbitrary number of arguments of any length
 
-def kwargs(**kwargs):
-  for k,v in kwargs.items():
-    print(k,v)
+# def kwargs(**kwargs):
+#   for k,v in kwargs.items():
+#     print(k,v)
 
-kwargs(**{'uno':'one','dos':'two','tres':'three'})
+# kwargs(**{'uno':'one','dos':'two','tres':'three'})
 
-kwargs(dos='two', tres='three', uno='one')
+# kwargs(dos='two', tres='three', uno='one')
 
-L = [1,5,6,6,8,6,9]
+# L = [1,5,6,6,8,6,9]
 
-L.remove(6)
+# L.remove(6)
 
-print(L)
+# print(L)
 
+# s="hello"
+
+# print(list(map(s.count,s)))
+
+# a = [[1,2,3,4],[9,5,6,7]]
+
+# b = [item for x in a for item in x]
+# c = [item*2 for x in a for item in x]
+# print(b)
+# print(c)
+
+a=[1,2,3]
+b=[4,5,6]
+z=list(zip(a,b))
+print(z)
+c,d=zip(*z)
+print("Before zip",a,b)
+print("Recovered after zip",list(c),list(d))
+
+keys=['a','b','c']
+values = [1,2,3]
+
+d3=dict(zip(keys,values))
+
+print("Dict using zip",d3)
+
+d2={}
+
+for k,v in zip(keys,values):
+  d2[k]=v
+
+print(d2)
+
+# dictionary comprehension example
+
+d4 = {k:v for k,v in zip(keys,values)}
+print(d4)
+
+D = dict.fromkeys('Hello')
+print(D)
+
+
+class Point():
+  def __init__(self,x,y):
+          self.x=x
+          self.y=y
+  def __repr__(self):
+   return 'Point(x=%s, y=%s)' % (self.x, self.y)
+
+
+p=Point(12,13)
+print(p)

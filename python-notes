@@ -16,3 +16,34 @@ any collection having _next_ is iterator and having _next_ is iterable
 remove(el) - removes the first matching element - el and used when element to be removed's index is not known
 
 del / pop - used when index is know and both work on indexes
+
+*** key string functions ***
+
+s.find('substring') - returns lowest index where the substring is found
+s.count('letter')
+''.join(seq)
+s.replace('source-string','dest-string')
+s.index('string')
+s.strip('allmatchingchars else space')
+splitlines
+split([sep]) - return list of words using sep as delimiter
+isalnum()isalpha()isdigit()
+
+List comprehension applies an expression onto a sequence unlike map / filter over a sequence or with a far loop & function
+[x*3 for x in range(5)] - list(map(lambda x:x*3),range(5))
+
+List comprehension eg-2 for traversing multiple lists
+
+result = [ x ** y for x in [10, 20, 30] for y in [2, 3, 4]]
+
+ord('A') -> ascii value of A
+
+speed of operation : list comprehension > map > for loop as LC and Map are implemented in C at Python VM level
+
+hastables are implemented through dictionaries
+
+
+# dictionary comprehension example
+keys=['a','b','c'] values = [1,2,3]
+d4 = {k:v for k,v in zip(keys,values)} or easier as dict(zip(keys,values))
+print(d4)

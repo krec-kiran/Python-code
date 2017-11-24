@@ -29,10 +29,13 @@ alb = []
 for k, v in music.items():
     alb.append(v)
 
-alb = [item for sublist in alb for item in sublist]
-alb = [item for sublist in alb for item in sublist]
+print("ALBUM",alb)
 
-# print("\nThe album list is\n", list(set(alb)))
+
+# result = [ x ** y for x in [10, 20, 30] for y in [2, 3, 4]]
+alb = [x for sublist in alb for item in sublist for x in item]
+print("FIRST ALB",alb)
+
 
 mylist = list(set(alb))
 
