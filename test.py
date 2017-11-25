@@ -30,6 +30,10 @@ from functools import reduce
 
 f=lambda a,b:a if(a>b) else b
 
+f=lambda a,b:a if a<b else b
+y=reduce(f,[47,11,42,102,13])
+print("Lowest element",y)
+
 
 x = reduce(f,[47,11,42,102,13])
 print(x)

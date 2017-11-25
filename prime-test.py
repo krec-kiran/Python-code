@@ -1,3 +1,4 @@
+import sys
 def isPrime(n):
   if n==1:
     return False
@@ -7,7 +8,7 @@ def isPrime(n):
   return True
 
 def primes(n=1):
-  while n<10:
+  while n<100:
     if isPrime(n):
       yield n
     n+=1
@@ -15,3 +16,4 @@ def primes(n=1):
 for i in primes():
   print(i)
 
+print([n for n in range(100) if isPrime(n)])

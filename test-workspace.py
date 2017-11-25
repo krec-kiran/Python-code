@@ -1,191 +1,199 @@
-# num=10
+# # num=10
 
-# num+=50
+# # num+=50
 
-# num+=1
-# # print(num)
+# # num+=1
+# # # print(num)
 
-# def sqrt(x):
-#   return x*x
+# # def sqrt(x):
+# #   return x*x
 
-# strings = ["hello", "kiran", "TN126BJ"]
+# # strings = ["hello", "kiran", "TN126BJ"]
 
-# numbers = [1,2,3,4]
+# # numbers = [1,2,3,4]
 
-# items = [2,3,5,0.8,"abc",'a','e','i']
+# # items = [2,3,5,0.8,"abc",'a','e','i']
 
-# # print(''.join(numbers))
+# # # print(''.join(numbers))
 
-# print(''.join(map(str,items)))
+# # print(''.join(map(str,items)))
 
-# print(','.join(strings) )
-
-
-# # Map takes a funcation and applies that to all members of collection
-# # good reference - http://www.bogotobogo.com/python/python_fncs_map_filter_reduce.php
-# # the function could also be replaced by lambda
-
-# print(list(map(sqrt,numbers)))
-
-# print(list(map((lambda x:x**3),numbers)))
+# # print(','.join(strings) )
 
 
-# Sort based on the user provided constraint in key - by length or value
-# of second element as the following
+# # # Map takes a funcation and applies that to all members of collection
+# # # good reference - http://www.bogotobogo.com/python/python_fncs_map_filter_reduce.php
+# # # the function could also be replaced by lambda
 
-# take second element for sort
-# def takeSecond(elem):
-#     print(elem)
-#     return elem[1]
+# # print(list(map(sqrt,numbers)))
 
-# # random list
-# random = [(2, 2), (3, 4), (4, 1), (1, 3)]
-
-# # print(takeSecond((3, 4)))
-
-# # sort list with key
-# sortedList = sorted(random, key=takeSecond)
-
-# testlist = sorted(random)
-
-# print(testlist)
-# # print list
-# print('Sorted list:', sortedList)
+# # print(list(map((lambda x:x**3),numbers)))
 
 
-# Enumerate example - useful for indexed series - 0,1,2...
+# # Sort based on the user provided constraint in key - by length or value
+# # of second element as the following
 
-# L = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# # take second element for sort
+# # def takeSecond(elem):
+# #     print(elem)
+# #     return elem[1]
 
-# for i, v in enumerate(L):
-#     if i % 3 == 0:
-#         print(i,v)
+# # # random list
+# # random = [(2, 2), (3, 4), (4, 1), (1, 3)]
 
-# for i in L:
-#     if i % 2 == 0:
-#         print(i)
+# # # print(takeSecond((3, 4)))
 
-# Merging two sorted lists
+# # # sort list with key
+# # sortedList = sorted(random, key=takeSecond)
 
-# a=[1,3,5,7]
-# b=[2,4,6,8]
-# c=[]
+# # testlist = sorted(random)
 
-# # a.extend(b)
-# # c=sorted(a)
+# # print(testlist)
+# # # print list
+# # print('Sorted list:', sortedList)
+
+
+# # Enumerate example - useful for indexed series - 0,1,2...
+
+# # L = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+# # for i, v in enumerate(L):
+# #     if i % 3 == 0:
+# #         print(i,v)
+
+# # for i in L:
+# #     if i % 2 == 0:
+# #         print(i)
+
+# # Merging two sorted lists
+
+# # a=[1,3,5,7]
+# # b=[2,4,6,8]
+# # c=[]
+
+# # # a.extend(b)
+# # # c=sorted(a)
+# # # print(c)
+
+# # # difference between append and extend - append adds in a list while extends adds in all elements into the source list
+
+# # a.append(b)
+# # print(a)
+
+
+# # while a and b:
+# #   if a[0] < b[0]:
+# #     c.append(a.pop(0))
+# #   else:
+# #     c.append(b.pop(0))
+
 # # print(c)
 
-# # difference between append and extend - append adds in a list while extends adds in all elements into the source list
+# # use str() to convert digits to string format before using join or other functions
 
-# a.append(b)
-# print(a)
+# # print(''.join(str(x) for x in range(10)))
 
+# # import os
 
-# while a and b:
-#   if a[0] < b[0]:
-#     c.append(a.pop(0))
-#   else:
-#     c.append(b.pop(0))
+# # print(os.path.expanduser('~'))
 
-# print(c)
+# # print(os.getcwd())
 
-# use str() to convert digits to string format before using join or other functions
+# # import itertools
 
-# print(''.join(str(x) for x in range(10)))
+# # print([x for x in itertools.combinations('125',2)])
 
-# import os
+# # print((x ** 3 for x in range(5)))
 
-# print(os.path.expanduser('~'))
+# # expression type generator - list comprehension
+# # gen = (x ** 3 for x in range(5))
 
-# print(os.getcwd())
+# # print(next(gen))
+# # print(next(gen))
+# # print(next(gen))
+# # print(next(gen))
 
-# import itertools
+# # def test(arg):
+# #   """test function returns an argument"""
+# #   return arg
 
-# print([x for x in itertools.combinations('125',2)])
+# # print(test(10))
+# # print(test.__doc__)
 
-# print((x ** 3 for x in range(5)))
+# # keyword arguments - name=value kwargs
+# # *args - arbitrary number of arguments of any length
 
-# expression type generator - list comprehension
-# gen = (x ** 3 for x in range(5))
+# # def kwargs(**kwargs):
+# #   for k,v in kwargs.items():
+# #     print(k,v)
 
-# print(next(gen))
-# print(next(gen))
-# print(next(gen))
-# print(next(gen))
+# # kwargs(**{'uno':'one','dos':'two','tres':'three'})
 
-# def test(arg):
-#   """test function returns an argument"""
-#   return arg
+# # kwargs(dos='two', tres='three', uno='one')
 
-# print(test(10))
-# print(test.__doc__)
+# # L = [1,5,6,6,8,6,9]
 
-# keyword arguments - name=value kwargs
-# *args - arbitrary number of arguments of any length
+# # L.remove(6)
 
-# def kwargs(**kwargs):
-#   for k,v in kwargs.items():
-#     print(k,v)
+# # print(L)
 
-# kwargs(**{'uno':'one','dos':'two','tres':'three'})
+# # s="hello"
 
-# kwargs(dos='two', tres='three', uno='one')
+# # print(list(map(s.count,s)))
 
-# L = [1,5,6,6,8,6,9]
+# # a = [[1,2,3,4],[9,5,6,7]]
 
-# L.remove(6)
+# # b = [item for x in a for item in x]
+# # c = [item*2 for x in a for item in x]
+# # print(b)
+# # print(c)
 
-# print(L)
+# a=[1,2,3]
+# b=[4,5,6]
+# z=list(zip(a,b))
+# print(z)
+# c,d=zip(*z)
+# print("Before zip",a,b)
+# print("Recovered after zip",list(c),list(d))
 
-# s="hello"
+# keys=['a','b','c']
+# values = [1,2,3]
 
-# print(list(map(s.count,s)))
+# d3=dict(zip(keys,values))
 
-# a = [[1,2,3,4],[9,5,6,7]]
+# print("Dict using zip",d3)
 
-# b = [item for x in a for item in x]
-# c = [item*2 for x in a for item in x]
-# print(b)
-# print(c)
+# d2={}
 
-a=[1,2,3]
-b=[4,5,6]
-z=list(zip(a,b))
-print(z)
-c,d=zip(*z)
-print("Before zip",a,b)
-print("Recovered after zip",list(c),list(d))
+# for k,v in zip(keys,values):
+#   d2[k]=v
 
-keys=['a','b','c']
-values = [1,2,3]
+# print(d2)
 
-d3=dict(zip(keys,values))
+# # dictionary comprehension example
 
-print("Dict using zip",d3)
+# d4 = {k:v for k,v in zip(keys,values)}
+# print(d4)
 
-d2={}
-
-for k,v in zip(keys,values):
-  d2[k]=v
-
-print(d2)
-
-# dictionary comprehension example
-
-d4 = {k:v for k,v in zip(keys,values)}
-print(d4)
-
-D = dict.fromkeys('Hello')
-print(D)
+# D = dict.fromkeys('Hello')
+# print(D)
 
 
-class Point():
-  def __init__(self,x,y):
-          self.x=x
-          self.y=y
-  def __repr__(self):
-   return 'Point(x=%s, y=%s)' % (self.x, self.y)
+# class Point():
+#   def __init__(self,x,y):
+#           self.x=x
+#           self.y=y
+#   def __repr__(self):
+#    return 'Point(x=%s, y=%s)' % (self.x, self.y)
 
 
-p=Point(12,13)
-print(p)
+# p=Point(12,13)
+# print(p)
+
+# 1,3,5,7,9
+# 2,4,6,8,10
+
+print(sum(range(2,11,2)))
+print(sum(range(0,101)))
+
+

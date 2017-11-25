@@ -47,4 +47,3 @@ print(my_person.get_fullname())
 # print my_get_text("John")
 
 # # <p>Outputs lorem ipsum, John dolor sit amet</p>
-
