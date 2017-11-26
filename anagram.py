@@ -6,11 +6,18 @@
 # else:
 #   print("Not an Anagram")
 
-source='Clint Easwtood'
-dest="Old west Action"
+source='Clint Eastwood'
+dest="Old west Actikn"
 
-source=''.join(set(source.replace(" ","").lower()))
-dest=''.join(set(dest.replace(" ","").lower()))
+source=source.replace(" ","")
+dest=dest.replace(" ","")
+
+if len(source)!= len(dest):
+  print("Not an Anagram")
+  exit()
+
+source=''.join(set(source.lower()))
+dest=''.join(set(dest.lower()))
 
 if len(source)!= len(dest):
   print("Not an Anagram")
@@ -28,4 +35,14 @@ for x in source:
       exit()
 
 print("Yes,it is an Anagram!\n")
+
+from itertools import permutations
+s="rat"
+perms = [''.join(x) for x in permutations(s)]
+print("Angrams of strings are",perms)
+
+# target=list(permutations(s))
+# for item in target:
+#   print(''.join(item),)
+
 
