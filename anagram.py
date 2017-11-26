@@ -23,7 +23,6 @@ if len(source)!= len(dest):
   print("Not an Anagram")
   exit()
 
-
 for x in source:
   j=0
   for y in dest:
