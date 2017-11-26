@@ -19,6 +19,10 @@ if len(source)!= len(dest):
 source=''.join(set(source.lower()))
 dest=''.join(set(dest.lower()))
 
+
+# source=''.join(set(source.lower()))
+# dest=''.join(set(dest.lower()))
+
 if len(source)!= len(dest):
   print("Not an Anagram")
   exit()
