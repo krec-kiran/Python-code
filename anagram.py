@@ -6,23 +6,18 @@
 # else:
 #   print("Not an Anagram")
 
-source='parliament'
-dest="partial men"
-i=0
-j=0
+source='Clint Easwtood'
+dest="Old west Action"
 
-source=source.replace(" ","")
-dest=dest.replace(" ","")
-
-print("Source",source,"Dest",dest)
+source=''.join(set(source.replace(" ","").lower()))
+dest=''.join(set(dest.replace(" ","").lower()))
 
 if len(source)!= len(dest):
-  print("Strings are not of equal length")
+  print("Not an Anagram")
   exit()
 
 
 for x in source:
-  i+=1
   j=0
   for y in dest:
     j+=1
@@ -31,8 +26,6 @@ for x in source:
     elif x!=y and len(source)==j:
       print("Not an Anagram!\n")
       exit()
-    elif len(source)!=j:
-      continue
 
 print("Yes,it is an Anagram!\n")
 
