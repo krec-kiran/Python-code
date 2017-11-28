@@ -1,4 +1,4 @@
-# # zip is to aggregates two lists and returns an iterator
+# # zip is to aggregate two lists and returns an iterator
 
 # numberList = [1, 2, 3,4,5]
 # strList = ['one', 'two', 'three']
