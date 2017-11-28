@@ -7,7 +7,7 @@
 #   print("Not an Anagram")
 
 source='Clint Eastwood'
-dest="Old west Actikn"
+dest="Old west Action"
 
 source=source.replace(" ","")
 dest=dest.replace(" ","")

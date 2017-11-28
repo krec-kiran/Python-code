@@ -51,3 +51,7 @@ print(d4)
 closures are function objects which retains the values even past execution of function calls or outside of memory.
 It is used for data hiding when there are few methods and widely in decorators to create wrapper functions.
 
+All of python's mutable objects - list,dictionaries are not hashables.
+Hashable objects in python are indexable and does not change their value in thier lifetime like
+immutable ones - frozen set, tuples, primitive data types,instances of user defined classes.
+they need to be comparble
