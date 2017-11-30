@@ -1,6 +1,5 @@
 #  memoize discussion
 
-
 def memoize(f):
     memo = {}
 
