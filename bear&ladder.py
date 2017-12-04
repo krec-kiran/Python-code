@@ -12,7 +12,7 @@ you should check if there is a road between them. For each query, print "YES" or
 
 # roads=[17,2384823]
 # roads=[10,12]
-
+# roads=[1,4]
 roads=[999999999,1000000000]
 minimum=min(roads)
 maximum=max(roads)
