@@ -15,4 +15,3 @@ def equal_check(a):
   return -1
 
 print(equal_check(a))
-

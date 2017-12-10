@@ -6,3 +6,5 @@ for word in text.split():
   counter[word]=text.count(word)
 
 print(counter)
+
+
