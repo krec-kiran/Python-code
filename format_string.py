@@ -1,7 +1,7 @@
 # namelist= [ {'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'} ]
-# namelist=[ {'name': 'Bart'} ]
+namelist=[ {'name': 'Bart'} ]
 # namelist=[]
-namelist=[{'name': 'Bart'},{'name': 'Lisa'},{'name': 'Maggie'},{'name': 'Homer'},{'name': 'Marge'}]
+# namelist=[{'name': 'Bart'},{'name': 'Lisa'},{'name': 'Maggie'},{'name': 'Homer'},{'name': 'Marge'}]
 
 names = [li['name'] for li in namelist ]
 
