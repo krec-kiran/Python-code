@@ -9,11 +9,11 @@ def longest_consec(strarr, k):
   prev_longest=""
   for x in strarr:
     current_longest=x
-    i=1
+    counter=1
     current_longest=x
-    while(i<k and strarr.index(x)+i<len(strarr)):
-      current_longest+=strarr[strarr.index(x)+i]
-      i+=1
+    while(counter<k and strarr.index(x)+counter<len(strarr)):
+      current_longest+=strarr[strarr.index(x)+counter]
+      counter+=1
     if len(current_longest) > len(prev_longest):
       prev_longest=current_longest
 

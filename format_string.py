@@ -1,7 +1,7 @@
 # namelist= [ {'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'} ]
-namelist=[ {'name': 'Bart'} ]
+# namelist=[ {'name': 'Bart'} ]
 # namelist=[]
-# namelist=[{'name': 'Bart'},{'name': 'Lisa'},{'name': 'Maggie'},{'name': 'Homer'},{'name': 'Marge'}]
+namelist=[{'name': 'Bart'},{'name': 'Lisa'},{'name': 'Maggie'},{'name': 'Homer'},{'name': 'Marge'}]
 
 names = [li['name'] for li in namelist ]
 
@@ -20,10 +20,10 @@ def namelisting(namelist):
 
 print(namelisting(namelist))
 
-if len(names) > 1:
-  print("'",", ".join(names[:-1]),"and","".join(names[-1:]),"'")
-else:
-  print("'","".join(names),"'")
+# if len(names) > 1:
+#   print("'",", ".join(names[:-1]),"and","".join(names[-1:]),"'")
+# else:
+#   print("'","".join(names),"'")
 
 
 
