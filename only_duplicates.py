@@ -2,13 +2,11 @@ import collections
 
 def only_duplicates(string):
   text = list(string)
-  dummy = text
   freq=collections.Counter(text)
   for k in freq:
     if freq[k] < 2:
-      dummy.remove(k)
-  return(''.join(dummy))
-
+      text.remove(k)
+  return(''.join(text))
 
 
 print(only_duplicates("abccdefee"))
