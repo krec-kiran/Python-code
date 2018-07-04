@@ -11,7 +11,6 @@ def trailerZeros(number):
     while(factorial[-1:] == '0'):
         trailer += 1
         factorial = factorial[:-1]
-        # print(factorial)
 
     return(trailer)
 
