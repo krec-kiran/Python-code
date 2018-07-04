@@ -33,5 +33,3 @@ class Account(object):
 account = Account("Kiran", 567, 80000)
 print(account._City)
 print(account.balance())
-
-

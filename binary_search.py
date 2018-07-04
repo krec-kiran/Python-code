@@ -19,7 +19,7 @@ class BinSearch:
 if __name__ == "__main__":
     array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     t = BinSearch(array, len(array) - 1)
-    x = t.search(3)
+    x = t.search(22)
 
     if x == -1:
         print("not found")

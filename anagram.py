@@ -41,8 +41,8 @@ s="rat"
 perms = [''.join(x) for x in permutations(s)]
 print("Angrams of strings are",perms)
 
+
+
 # target=list(permutations(s))
 # for item in target:
 #   print(''.join(item),)
-
-

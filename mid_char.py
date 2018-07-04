@@ -1,11 +1,11 @@
-text="A"
+text = "ABC"
 
-length=len(text)
-if length%2==0:
-    mid=int(length/2)
-    print(text[mid-1:mid+1])
+length = len(text)
+if length % 2 == 0:
+    mid = int(length / 2)
+    print(text[mid - 1:mid + 1])
 else:
-    mid=int((length-1)/2)
+    mid = int((length - 1) / 2)
     print(text[mid])
 
 # def mystery(n):

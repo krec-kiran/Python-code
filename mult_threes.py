@@ -20,3 +20,4 @@ def find_mult_3(num):
 
 
 print(find_mult_3('302'))
+print(find_mult_3('415'))

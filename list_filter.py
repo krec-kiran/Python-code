@@ -3,5 +3,3 @@
 a=[1,2,'a','b','1']
 
 k=[x for x in a if type(x) == type(1)]
-print(k)
-

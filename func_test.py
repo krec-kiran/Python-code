@@ -12,6 +12,11 @@ nf1 = f(1)
 print(nf1(3))
 # print(nf2(1))
 
+def square(x):
+    def cube(y):
+        return (y * y * y + x)
+    return cube
+
 
 def square(x):
     def cube(y):

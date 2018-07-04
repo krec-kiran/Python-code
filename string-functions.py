@@ -6,6 +6,9 @@ str = "Hello Kiran this is a very long sentence"
 
 sample = "Hello Kiran this is a very Kiran long sentence Kiran"
 
+# test="XDCS"
+# print(sorted(test))
+
 print(sample.count("Kiran"))
 
 count = 0

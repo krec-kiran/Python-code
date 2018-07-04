@@ -12,5 +12,3 @@ def accum(s):
 
 s='ZpglnRxqenU'
 accum(s)
-
-

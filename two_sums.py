@@ -1,16 +1,19 @@
-nums = [2,7,11,13,15]
-target=20
+nums = [3,8,3,2,7]
+initial_nums = nums
+target=15
 initial_target = target
-indexes=[]
-
 
 def twosums(nums,target):
   toto=0
   i=0
-  nums.sort()
-  while toto < target:
+  # nums.sort()
+  while toto <= target:
     toto+= nums[i]
     target-= nums[i]
+    print(nums[i])
+    print(toto,target)
+    nums.pop(i)
+    print(nums)
     if target in nums:
       return(i,nums.index(target))
       break
@@ -18,6 +21,8 @@ def twosums(nums,target):
       i+=1
       toto=0
       target=initial_target
+      nums=initial_nums
+      print("NUMS",nums)
 
 print("The traget",target,"can be achieved by these two indexes in array nums:",twosums(nums,target))
 
