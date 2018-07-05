@@ -9,7 +9,7 @@
 # Note: in case you don't get why this kata is about English beggars, then you are not familiar on how religiously queues are taken in the kingdom ;)
 
 values = [1, 2, 3, 4, 5]
-n = 3
+n = 4
 l = []
 
 element = 0
