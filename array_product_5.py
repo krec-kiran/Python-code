@@ -1,6 +1,6 @@
 # Use dictionary to reduce time complexity
 from functools import reduce
-n = [1, 2, 3, 4, 0, 4]
+n = [1, 2, 3, 4, 9, -3, 3]
 product = [0] * len(n)
 d = dict()
 for i in range(len(n)):
