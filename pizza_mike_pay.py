@@ -6,20 +6,16 @@
 # Kata - 7kyu
 
 
-def payment(cost):
+def michael_pays(cost):
     mike_pay = 0
     if(cost < 5):
         mike_pay = cost
-    elif (cost / 3 <= 10):
-        mike_pay = (2 / 3) * (cost)
     else:
-        mike_pay = None
-    return mike_pay
+        if cost / 3 <= 10:
+            cost = cost - cost / 3
+        else:
+            cost = cost - 10
 
+        mike_pay = cost
 
-for i in range(40):
-    mikeBill = payment(i)
-    if mikeBill:
-        print("Cost:£%d % .2f" % (i, mikeBill))
-    else:
-        print("no treat possible!")
+    return round(mike_pay, 2)
