@@ -1,5 +1,6 @@
 def bucketize(*arr):
     arr = list(arr)
+    print(arr)
     result = [None] * (len(arr) + 1)
     d = dict()
     for i in arr:
