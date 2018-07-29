@@ -1,5 +1,4 @@
 def string_parse(arr):
-    print(arr)
     if type(arr) != str:
         return 'Please enter a valid string'
     result = []
