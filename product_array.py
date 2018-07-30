@@ -4,7 +4,6 @@ from functools import reduce
 
 
 def product_array(numbers):
-    l = []
     result = []
     for x in range(0, len(numbers)):
         k = numbers[:x] + numbers[x + 1:]
