@@ -7,6 +7,7 @@ def product_array(numbers):
     result = []
     for x in range(0, len(numbers)):
         k = numbers[:x] + numbers[x + 1:]
+        print(k)
         product = reduce(lambda x, y: x * y, k)
         result.append(product)
     return result
