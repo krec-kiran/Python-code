@@ -8,7 +8,7 @@ def missing(s):
     seq = 0
     while count > 0:
         while end < len(s) - 1 and digit + 1 == int(next):
-            seq = 1
+            seq = True
             if len(str(digit)) > count:
                 count += 1
             start += count
@@ -16,7 +16,7 @@ def missing(s):
             current = s[start:end]
             digit += 1
             next = s[start + count:end + count]
-        if next and digit + 1 != int(next) and seq == 1:
+        if next and digit + 1 != int(next) and seq:
             return(digit + 1)
         if not next:
             return -1
