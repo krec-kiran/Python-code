@@ -19,7 +19,6 @@ def factorial(n):
 
 def am_i_wilson(n):
     if isPrime(n):
-        print(n, 'is prime')
         val = (math.factorial(n - 1) + 1) % (n * n)
         if val == 0:
             return True
