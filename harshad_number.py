@@ -17,13 +17,9 @@ class Harshad:
     @staticmethod
     def get_series(count, start=0):
         result = []
-        i = 0
-        val = start
-        while i < count:
-            val = Harshad.get_next(start)
-            result.append(val)
-            start = val
-            i += 1
+        for i in range(count):
+            start = Harshad.get_next(start)
+            result.append(start)
         return result
 
 
