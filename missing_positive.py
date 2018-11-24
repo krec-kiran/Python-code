@@ -6,7 +6,7 @@ class Solution:
         if small != -1:
             small = min([x for x in nums if x > 0])
         for i in range(len(nums)):
-            if small not in nums:
+            if small not in nums and small > 0:
                 return small
             else:
                 small += 1
