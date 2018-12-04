@@ -2,7 +2,6 @@ def tribonacci(signature, n):
     if n < 3:
         return signature[:n]
     counter = 3
-    fib4 = 0
     index = 0
     while counter < n:
         signature.append(signature[index] +
