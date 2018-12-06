@@ -10,15 +10,16 @@ def longest_palindrome(text):
     already_seen = []
 
     for character in text:
-        if character not in already_seen and text.count(character) % 2 == 0:
-            already_seen.append(character)
-            palindrome_length += text.count(character)
-        elif character not in already_seen and text.count(character) > 1:
-            already_seen.append(character)
-            palindrome_length += text.count(character) - 1
-        elif text.count(character) == 1 and common_char_count == 0:
-            common_char_count += 1
-            palindrome_length += 1
+        if character not in already_seen:
+            if text.count(character) % 2 == 0:
+                already_seen.append(character)
+                palindrome_length += text.count(character)
+            elif text.count(character) > 1:
+                already_seen.append(character)
+                palindrome_length += text.count(character) - 1
+            elif text.count(character) == 1 and common_char_count == 0:
+                common_char_count += 1
+                palindrome_length += 1
     if common_char_count <= 1:
         return(palindrome_length)
 
