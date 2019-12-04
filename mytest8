@@ -1,0 +1,26 @@
+[('doc1.txt', 'doc2.txt'), ('doc1.txt', 'doc3.txt'), ('doc1.txt', 'doc4.txt'), ('doc2.txt', 'doc3.txt'), ('doc2.txt', 'doc4.txt'), ('doc3.txt', 'doc4.txt'), ('doc1.txt', 'doc2.txt', 'doc3.txt'), ('doc1.txt', 'doc2.txt', 'doc4.txt'), ('doc1.txt', 'doc3.txt', 'doc4.txt'), ('doc2.txt', 'doc3.txt', 'doc4.txt'), ('doc1.txt', 'doc2.txt', 'doc3.txt', 'doc4.txt')]
+('doc1.txt', 'doc2.txt')
+COMMON {'Kiran', 'Rishi', 'the', 'Aryan', 'London', 'and', 'is', 'Google', 'for', 'now', 'to', 'all'}
+('doc1.txt', 'doc3.txt')
+COMMON {'Google', 'Rishi', 'Aryan', 'London', 'is'}
+('doc1.txt', 'doc4.txt')
+COMMON {'London', 'Google'}
+('doc2.txt', 'doc3.txt')
+COMMON {'London', 'Google'}
+('doc2.txt', 'doc4.txt')
+COMMON {'London', 'Google'}
+('doc3.txt', 'doc4.txt')
+COMMON {'London', 'Google'}
+('doc1.txt', 'doc2.txt', 'doc3.txt')
+COMMON {'London', 'Google'}
+('doc1.txt', 'doc2.txt', 'doc4.txt')
+COMMON {'London', 'Google'}
+('doc1.txt', 'doc3.txt', 'doc4.txt')
+COMMON {'London', 'Google'}
+('doc2.txt', 'doc3.txt', 'doc4.txt')
+COMMON {'London', 'Google'}
+('doc1.txt', 'doc2.txt', 'doc3.txt', 'doc4.txt')
+COMMON {'London', 'Google'}
+DOC PARSER OUTPUT
+
+{"Kiran": {"doc1.txt": "Kiran Extremely beneficial", "doc2.txt": "Kiran wonderful"}, "Rishi": {"doc1.txt": "Rishi has gone to nursery", "doc3.txt": "Rishi Google London Newyork"}, "Aryan": {"doc1.txt": "Aryan will be brilliant", "doc3.txt": "Aryan is Apple smart"}, "and": {"doc1.txt": "Let me begin by saying thanks to all you who've traveled, from far and wide, to brave the cold today", "doc2.txt": "To Chairman Dean and my great friend Dick Durbin; and to all my fellow citizens of this great nation;\nWith profound gratitude and great humility, I accept your nomination for the presidency of the United States"}, "the": {"doc1.txt": "Let me begin by saying thanks to all you who've traveled, from far and wide, to brave the cold today", "doc2.txt": "To Chairman Dean and my great friend Dick Durbin; and to all my fellow citizens of this great nation;\nWith profound gratitude and great humility, I accept your nomination for the presidency of the United States"}, "is": {"doc1.txt": "It is raining in London now later", "doc3.txt": "Aryan is Apple smart"}, "London": {"doc4.txt": "Rishi Apple Google London Newyork", "doc1.txt": "It is raining in London now later", "doc3.txt": "London is Subhashini of UK", "doc2.txt": "London is great"}, "for": {"doc1.txt": "Google for rescue", "doc2.txt": "To Chairman Dean and my great friend Dick Durbin; and to all my fellow citizens of this great nation;\nWith profound gratitude and great humility, I accept your nomination for the presidency of the United States"}, "now": {"doc1.txt": "It is raining in London now later", "doc2.txt": "Rishi coming now"}, "all": {"doc1.txt": "Let me begin by saying thanks to all you who've traveled, from far and wide, to brave the cold today", "doc2.txt": "To Chairman Dean and my great friend Dick Durbin; and to all my fellow citizens of this great nation;\nWith profound gratitude and great humility, I accept your nomination for the presidency of the United States"}, "to": {"doc1.txt": "Let me begin by saying thanks to all you who've traveled, from far and wide, to brave the cold today", "doc2.txt": "To Chairman Dean and my great friend Dick Durbin; and to all my fellow citizens of this great nation;\nWith profound gratitude and great humility, I accept your nomination for the presidency of the United States"}, "Google": {"doc4.txt": "Rishi Apple Google London Newyork", "doc1.txt": "Google for rescue", "doc3.txt": "Rishi Google London Newyork", "doc2.txt": "Google bigdata"}}

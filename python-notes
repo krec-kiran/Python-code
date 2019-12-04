@@ -15,7 +15,7 @@ any collection having _next_ is iterator and having _next_ is iterable
 
 remove(el) - removes the first matching element - el and used when element to be removed's index is not known
 
-del / pop - used when index is know and both work on indexes
+del / pop - used when index is known and both work on indexes
 
 *** key string functions ***
 

@@ -1,0 +1,43 @@
+Instructions as given:
+
+The notes.txt file should include:
+- Brief instructions on how to run your code
+- Any notes we should bear in mind (e.g. why you made an unusual choice)
+- A brief note on what you found hardest about the challenge
+- A brief note on how you could improve your code further
+- Any feedback to us on how to improve either the challenge itself or the
+recruitment process so far
+
+********************************************************************
+
+Execution:
+            python viva_hash_solution.py hash-1.txt
+            python viva_path_solution.py path-basic.txt
+
+SDK / API usage:
+
+I have leverage the ASTAR algorithm ( https://en.wikipedia.org/wiki/A*_search_algorithm)
+for path finding as it is more effective in such scenarios.
+
+Please note that, I have made use of ASTAR implementation by # Author: Christian Careaga ( http://code.activestate.com/recipes/578919-python-a-pathfinding-with-binary-heap/)
+
+I have fine tuned that for only vertical and horizontal movements avoiding diagonal moves.
+
+There may be other SDKs/ API like Networkx and  from other individuals, but need here a maze kind of problem space
+
+General pointers:
+
+I have not tested for all inputs particularly for path finding problem due to paucity of time.
+I believe, it may not work for all cases, and some debugging and fine tuning the code and displaying the legend needs to looked into.
+
+Hashing problem, I think it may work for all cases. Never know!
+
+Path finding  algorithm is a general challenging to build from scratch and would have taken more time to implement the core algorithm. Interesting problem space. That would have been fun too.
+
+All in all, good set of challenges and have learnt a lot during this process. Thank you!
+
+Improvements:
+
+Wish, I could have tested more and written more pythonic way of naming conventions / structures
+Tested for any failures - try / catch block types for all scenarios
+There is scope to optimise the code at few places, may not be best way to solve.

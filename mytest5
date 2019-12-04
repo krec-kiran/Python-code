@@ -1,0 +1,4 @@
+DOC PARSER OUTPUT
+
+{"Google": {"doc2.txt": "Google bigdata", "doc1.txt": "Google for rescue", "doc3.txt": "Google London"}, "Rishi": {"doc2.txt": "Rishi is doing well", "doc1.txt": "Rishi will be brilliant", "doc3.txt": "Rishi is smart"}}
+[('doc1.txt', 'doc2.txt'), ('doc1.txt', 'doc3.txt'), ('doc1.txt', 'doc4.txt'), ('doc2.txt', 'doc3.txt'), ('doc2.txt', 'doc4.txt'), ('doc3.txt', 'doc4.txt'), ('doc1.txt', 'doc2.txt', 'doc3.txt'), ('doc1.txt', 'doc2.txt', 'doc4.txt'), ('doc1.txt', 'doc3.txt', 'doc4.txt'), ('doc2.txt', 'doc3.txt', 'doc4.txt'), ('doc1.txt', 'doc2.txt', 'doc3.txt', 'doc4.txt')]
